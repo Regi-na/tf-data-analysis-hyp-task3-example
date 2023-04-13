@@ -8,4 +8,4 @@ def solution(cnt: np.array, test: np.array) -> bool: # Одна или две в
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    return (stats.ttest_ind(cnt, test).pvalue < 0.03) & (stats.ttest_ind(cnt, test).statistic >0) # Ваш ответ, True или False
+    return stats.ttest_ind(cnt, test).pvalue < 0.03
